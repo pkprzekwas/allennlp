@@ -7,7 +7,6 @@
 # please visit http://pytorch.org/ and install the relevant version.
 # torch==0.3.1
 
-os
 argparse
 
 # Parameter parsing.
