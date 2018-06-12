@@ -10,14 +10,10 @@ parser.add_argument("--mode", default="train", help="train or evaluate")
 args = parser.parse_args()
 
 if args.mode == "train":
+    print("Running %s" % args.mode)
     subprocess.call(TRAIN, shell=True)
 elif args.mode =="evaluate":
+    print("Running %s" % args.mode)
     subprocess.call(EVALUATE, shell=True)
 else:
     raise(NotImplementedError)
-
-
-print(args.mode)
-
-
-#
