@@ -11,6 +11,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--mode", default="train", help="train or evaluate")
 args = parser.parse_args()
 
+print("Running %s" % args.mode)
 if args.mode == "train":
     subprocess.call(TRAIN, shell=True)
 elif args.mode == "train_cpu":
@@ -19,6 +20,3 @@ elif args.mode =="evaluate":
     subprocess.call(EVALUATE, shell=True)
 else:
     raise(NotImplementedError)
-
-
-print(args.mode)
