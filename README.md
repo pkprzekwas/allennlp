@@ -26,6 +26,11 @@ After setting up a project based on this repository, create the following jobs. 
 `just create job single ... --mode train --python-version 3.6 --instance-type <GPU-instances> --framework pytorch-1.0.0 --requirements requirements.txt`
 
 
+## Playing with the test locally
+After cloning the repository, run `pip install requirements.txt`. The original allen nlp repository gives instructions on how to adjust this depending on your system.
+
+
+
 ## Acceptance Criteria
 Tests pass if you see an output that indicates the job is successfully training (see line outlined by >>>). Note the loss, and the "1%" which indicates how far the training has progressed and would eventually reach 100% (8 hours on a GPU).
 If in doubt, run the test locally first to build intuition on how the results should look like.
